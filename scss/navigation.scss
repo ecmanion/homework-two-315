@@ -1,0 +1,111 @@
+.navholder{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    .logo{
+        height: 50px;
+        width: 50px;
+        display: flex;
+    }
+    .logo-home{
+        display: none;
+    }
+    .bars .bar{
+        display: block;
+        width: 25px;
+        margin: 5px 0;
+        background-color: black;
+        height: 3px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+    .bars {
+        display: none;
+    }
+    .bars.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .bars.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .bars.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+   .links{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    background-color: wheat;
+    transition: height 0.3s, opacity 0.3s ease-in;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+   }
+   .links.active {
+    height: 10vh;
+    opacity: 1;
+}
+}
+
+@media screen and (max-width: 960px){
+    .navholder{
+        position: fixed;
+        width: 100%;
+        .logo{
+            height: 50px;
+            width: 50px;
+            display: none;
+        }
+        .logo-home{
+            height: 50px;
+            width: 50px;
+            display: flex; 
+            float: left;
+            margin: 1%;
+        }
+        .bars .bar{
+            display: block;
+            width: 25px;
+            margin: 5px 0;
+            background-color: black;
+            height: 3px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+        .bars{
+            display: block;
+            float: right;
+            margin-right: 3%;
+            margin-top: 2%;
+        }
+        .bars.active .bar:nth-child(1){
+            transform: translateY(8px) rotate(45deg);
+        }
+        .bars.active .bar:nth-child(2){
+            opacity: 0;
+        }
+        .bars.active .bar:nth-child(3){
+            transform: translateY(-8px) rotate(-45deg); 
+        }
+        .links{
+            height: 0;
+            flex-direction: column; 
+            opacity: 0;
+        }
+        .links.active {
+            height: 100vh;
+            opacity: 1;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    }
+  
+    }

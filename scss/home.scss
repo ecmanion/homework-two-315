@@ -1,0 +1,103 @@
+.home{
+    width: 100%;
+    height: 1000px;
+    z-index: 0;  
+    left:0;
+    .home-background{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        z-index: 2;  
+        left:0;
+        background-color: rgba(22, 21, 21,0.5);
+        img{
+            width: 100%;
+            height: 1000px;
+            object-fit: cover;
+            z-index: 999;
+            
+        }
+    }
+    .home-title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        z-index: 10;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        top: 50%;
+        background-color: rgba(22, 21, 21,0.5);
+        h1{
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: 50px;
+        }
+        .home-paragraph{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+           p{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            color: white;
+        } 
+        }
+        
+    }
+}
+
+@media screen and (max-width: 960px){
+    .home{
+        width: 100%;
+        height: 1000px;
+        z-index: 0;  
+        left:0;
+        .home-background{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            z-index: 2;  
+            left:0;
+            img{
+                width: 100%;
+                height: 1000px;
+                object-fit: cover;
+                z-index: 999;
+                
+            }
+        }
+        .home-title{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            z-index: 10;
+            position: relative;
+            width: 100%;
+            flex-direction: column;
+            top: 50%;
+            h1{
+                display: flex;
+                justify-content: center;
+                color: white;
+                font-size: 40px;
+            }
+            .home-paragraph{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+               p{
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                color: white;
+            } 
+            }
+            
+        }
+    }
+    }
